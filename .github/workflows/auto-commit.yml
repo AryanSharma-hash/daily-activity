@@ -2,7 +2,7 @@ name: Daily Auto Commit
 
 on:
   schedule:
-    # Runs every day at midnight UTC
+    # Runs every day at 10:30 AM IST (05:00 UTC)
     - cron: '0 5 * * *'
   workflow_dispatch:
 
@@ -15,8 +15,8 @@ jobs:
 
       - name: Set up Git identity
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "AryanSharma-hash"
+          git config --global user.email "amangametester@gmail.com"
 
       - name: Modify a file and commit
         run: |
